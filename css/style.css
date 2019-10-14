@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Quicksand:700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 82px;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222a39;
+}
+
+header h1::after {
+  content: "";
+  width: 140px;
+  height: 3px;
+  background-color: #222a39;
+  display: block;
+  margin: 16px auto;
+}
+
+.nosso-time {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 980px) {
+  .nosso-time {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 939px) {
+    .nosso-time {
+      justify-content: space-around;
+    }
+  }
+
+.nosso-time .membro {
+  margin: 16px 0;
+}
+
+.membro img {
+    max-width: 100%;
+    display: block;
+}
+
+.nosso-time figcaption {
+  font-family: "Quicksand";
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #909090;
+}
+
+.nosso-time figure span::before {
+  content: "";
+  width: 15px;
+  height: 8px;
+  display: inline-block;
+  background-color: currentColor;
+  margin-right: 5px;
+}
+
+.nosso-time figure:nth-child(3n + 1) span {
+  color: #eab736;
+}
+
+.nosso-time figure:nth-child(3n + 2) span {
+  color: #f27036;
+}
+
+.nosso-time figure:nth-child(3n + 3) span {
+  color: #82b1d8;
+}
